@@ -5,9 +5,13 @@ sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-
 sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=https://packages.microsoft.com/yumrepos/vscode\nenabled=1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/vscode.repo'
 
+sudo dnf copr enable sergiomb/google-drive-ocamlfuse
+
+sudo dnf copr enable linuxredneck/pamixer
+
 dnf check-update
 
-sudo dnf install xorg-x11-server-Xorg xorg-x11-xinit xrandr xev blueman wget curl openbox obconf tint2 xdg-user-dirs ntfs-3g rofi xscreensaver alacritty zsh xterm networkmanager network-manager-applet pulseaudio alsa-utils pavucontrol playerctl pamixer thunar thunar-volman thunar-archive-plugin gvfs unzip unrar firefox telegram-desktop nitrogen gedit xfce4-clipman-plugin eog xfce4-screenshooter libnotify picom neofetch htop google-noto-emoji-color-fonts file-roller gparted pulseaudio-module-bluetooth cups ghostscript avahi gutenprint system-config-printer discord vlc lxappearance-obconf code ibm-plex-fonts-all neovim xdg-user-dirs
+sudo dnf install xorg-x11-server-Xorg xorg-x11-xinit xrandr xev blueman wget curl openbox obconf tint2 xdg-user-dirs ntfs-3g rofi xscreensaver alacritty zsh xterm networkmanager network-manager-applet pulseaudio alsa-utils pavucontrol playerctl pamixer thunar thunar-volman thunar-archive-plugin gvfs unzip unrar firefox telegram-desktop nitrogen gedit xfce4-clipman-plugin eog xfce4-screenshooter libnotify picom neofetch htop google-noto-emoji-color-fonts file-roller gparted pulseaudio-module-bluetooth cups ghostscript avahi gutenprint system-config-printer discord vlc lxappearance-obconf code ibm-plex-fonts-all neovim xdg-user-dirs google-drive-ocamlfuse
 
 xdg-user-dirs-update
 
