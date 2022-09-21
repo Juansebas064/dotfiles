@@ -14,6 +14,7 @@ cp launcher.sh $home/.config/rofi/launchers/type-1/
 
 openbox --reconfigure
 killall -SIGUSR1 tint2
+sudo timedatectl set-timezone America/Bogota
 timedatectl set-ntp true
 
 #sudo chmod 777 $home/*

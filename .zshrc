@@ -83,7 +83,7 @@ compinit
 
 plugins=(
 	git
-	archlinux
+	dnf
 	zsh-autosuggestions
 	zsh-syntax-highlighting
 )
