@@ -654,7 +654,17 @@
         <command>gparted</command>
       </action>
     </keybind>
+    <keybind key="C-A-g">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>google-drive-ocamlfuse</name>
+        </startupnotify>
+        <command>google-drive-ocamlfuse ~/Drive</command>
+      </action>
+    </keybind>
   </keyboard>
+
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->
