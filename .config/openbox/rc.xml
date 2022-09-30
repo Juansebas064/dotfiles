@@ -561,7 +561,7 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Screenshot</name>
+          <name>Screenshot of the full screen</name>
         </startupnotify>
         <command>xfce4-screenshooter -f -c</command>
       </action>
@@ -570,9 +570,18 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Screenshot</name>
+          <name>Screenshot of a region</name>
         </startupnotify>
         <command>xfce4-screenshooter -r -c</command>
+      </action>
+    </keybind>
+    <keybind key="A-Print">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Screenshot of a window</name>
+        </startupnotify>
+        <command>xfce4-screenshooter -w -c</command>
       </action>
     </keybind>
     <keybind key="W-h">
