@@ -1,21 +1,20 @@
 # **My fisrt Arch rice**
 
 - **Window manager:** openbox
-- **Top bar:** tint2
-- **Session manager:** Lightdm (Not active)
-- **Greeter:** lightdm-webkit2-greeter (Not active)
+- **Bar:** tint2
 - **Notifications:** Dunst
 - **Screensaver:** xscreensaver
 - **Theme:** Arc-clone
 - **GTK Theme**: Fantome
-- **Font:** IBM Plex Sans JP
+- **Font:** IBM Plex Sans
 - **Icons:** Flat Remix Blue Dark
 - **Terminal emulator:** Alacritty
 - **Alacritty theme:** Iceberg Dark
 - **Alacritty font:** IBM Plex Mono
 - **Shell:** zsh + oh-my-zsh
 - **oh-my-zsh theme:** agnoster
-- **More in progress...**
+- **Nwtwork and memory monitor:** psuinfo
+
 
 ## **Screenshots**
 
