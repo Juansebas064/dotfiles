@@ -7,7 +7,7 @@ then
     nitrogen --restore
 else
     xrandr -s 1368x768 
-    kilall tint2
+    killall tint2
     tint2 &
     nitrogen --restore
 fi
