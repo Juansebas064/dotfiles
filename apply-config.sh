@@ -2,8 +2,6 @@
 
 home=$HOME
 
-#sudo chmod 777 *
-
 cp -r .config .icons .themes .zshrc .xinitrc scripts $home
 cp  nvim.desktop $home/.local/share/applications
 sudo cp -r etc/* /etc/

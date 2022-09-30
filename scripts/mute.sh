@@ -1,5 +1,4 @@
-pamixer -i 5 --allow-boost --set-limit 150
-level="$(pamixer --get-volume)"
+pamixer -t
 
 level="$(pamixer --get-volume)"
 
@@ -19,5 +18,4 @@ elif [ $level == 0 ]
 then
     notify-send "Volume" "$(pamixer --get-volume-human)" -h "string:image-path:$HOME/.icons/Flat-Remix-Blue-Dark/panel/audio-volume-muted.svg" -h "string:wired-tag:media" -u low
 fi
-
 

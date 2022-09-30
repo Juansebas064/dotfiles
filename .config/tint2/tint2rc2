@@ -125,16 +125,16 @@ border_color = #DC5D5D 95
 #-------------------------------------
 # Panel
 
-panel_items = TEE::SCBE
+panel_items = T
 panel_size = 100% 32
 panel_margin = 0 0
 panel_padding = 0 0
 panel_background_id = 1
 wm_menu = 0
 panel_dock = 0
-panel_position = top left horizontal	
+panel_position = bottom left horizontal	
 panel_layer = top
-panel_monitor = 1
+panel_monitor = 2
 panel_shrink = 0
 autohide = 0
 autohide_show_timeout = 0
@@ -156,7 +156,7 @@ taskbar_hide_if_empty = 0
 taskbar_padding = 0 0 0
 taskbar_background_id = 0
 taskbar_active_background_id = 0
-taskbar_name = 1
+taskbar_name = 0
 taskbar_hide_inactive_tasks = 0
 taskbar_hide_different_monitor = 1
 taskbar_hide_different_desktop = 1
@@ -169,7 +169,7 @@ taskbar_name_font_color = #e3e3e3 100
 taskbar_name_active_font_color = #ffffff 100
 taskbar_distribute_size = 0
 taskbar_sort_order = none
-task_align = left
+task_align = center
 
 #-------------------------------------
 # Task
@@ -194,146 +194,5 @@ mouse_right = none
 mouse_scroll_up = none
 mouse_scroll_down = none
 
-#-------------------------------------
-# System tray (notification area)
 
-systray_padding = 8 0 6
-systray_background_id = 0
-systray_sort = right2left
-systray_icon_size = 24
-systray_icon_asb = 100 0 0
-systray_monitor = 1
-systray_name_filter = 
-
-#-------------------------------------
-# Launcher
-
-launcher_padding = 2 4 2
-launcher_background_id = 0
-launcher_icon_background_id = 0
-launcher_icon_size = 24
-launcher_icon_asb = 100 0 0
-launcher_icon_theme_override = 0
-startup_notifications = 1
-launcher_tooltip = 1
-launcher_item_app = tint2conf.desktop
-launcher_item_app = firefox.desktop
-launcher_item_app = iceweasel.desktop
-launcher_item_app = chromium-browser.desktop
-launcher_item_app = google-chrome.desktop
-
-#-------------------------------------
-# Clock
-
-time1_format = |   %B, %a  %d   |   %H:%M 
-time1_timezone = 
-time1_font = IBM Plex Sans
-clock_font_color = #ffffff 100
-clock_padding = 8 0
-clock_background_id = 0
-clock_tooltip = 
-clock_tooltip_timezone = 
-clock_lclick_command = gsimplecal &
-clock_rclick_command = 
-clock_mclick_command = 
-clock_uwheel_command = 
-clock_dwheel_command = 
-
-#-------------------------------------
-# Battery
-
-battery_tooltip = 1
-battery_low_status = 10
-battery_low_cmd = xmessage 'tint2: Battery low!'
-battery_full_cmd = 
-bat1_font = IBM Plex Sans
-battery_font_color = #ffffff 100
-bat1_format = |  %p 
-bat2_format = 
-battery_padding = 5 0
-battery_background_id = 0
-battery_hide = never
-battery_lclick_command = 
-battery_rclick_command = 
-battery_mclick_command = 
-battery_uwheel_command = 
-battery_dwheel_command = 
-ac_connected_cmd = 
-ac_disconnected_cmd = 
-
-#-------------------------------------
-# Tooltip
-
-tooltip_show_timeout = 0.5
-tooltip_hide_timeout = 0.1
-tooltip_padding = 4 4
-tooltip_background_id = 5
-tooltip_font_color = #dddddd 100
-
-#-------------------------------------
-# Network load
-
-execp = new
-execp_command = python3 ~/scripts/psuinfo-master/psuinfo -Ik -N -M'Network: '
-execp_background_id = 8
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 2
-execp_centered = 0
-execp_icon_w = 20
-execp_icon_h = 0
-execp_centered = 1
-execp_padding = 8
-execp_monitor = all
-execp_font = IBM Plex Sans
-execp_font_color = #ffffff 100
-
-#-------------------------------------
-# Separator
-
-separator = new
-separator_color = #aaaaaa 100 
-separator_style = empty
-separator_size = 2
-separator_padding = 5 9
-
-#-------------------------------------
-# Separator
-
-separator = new
-separator_color = #aaaaaa 100 
-separator_style = line
-separator_size = 2
-separator_padding = 6 9
-
-#-------------------------------------
-# Memory usage
-
-execp = new
-execp_font = IBM Plex Sans
-execp_font_color = #ffffff 100
-execp_background_id = 7
-execp_padding = 8
-execp_monitor = all
-execp_command = python3 ~/scripts/psuinfo-master/psuinfo -IM -N -M'Memory: ' &
-execp_interval = 2
-execp_has_icon = 1
-execp_cache_icon = 1
-execp_continuous = 2
-execp_centered = 0
-execp_icon_w = 20
-execp_icon_h = 0
-
-#-------------------------------------
-# Name and logout
-
-execp = new
-execp_font = IBM Plex Sans
-execp_font_color = #ffffff 100
-execp_background_id = 5
-execp_padding = 8 2 0
-execp_monitor = all
-execp_command = hostnamectl hostname
-execp_lclick_command = sh ~/.config/rofi/powermenu/type-2/powermenu.sh
 

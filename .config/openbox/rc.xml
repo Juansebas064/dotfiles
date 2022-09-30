@@ -34,7 +34,7 @@
     <!-- with Smart placement on a multi-monitor system, try to place new windows
        on: 'Any' - any monitor, 'Mouse' - where the mouse is, 'Active' - where
        the active window is, 'Primary' - only on the primary monitor -->
-    <primaryMonitor>1</primaryMonitor>
+    <primaryMonitor>Active</primaryMonitor>
     <!-- The monitor where Openbox should place popup dialogs such as the
        focus cycling popup, or the desktop switch popup.  It can be an index
        from 1, specifying a particular monitor.  Or it can be one of the
@@ -180,6 +180,7 @@
   </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
+
     <!-- Keybindings for media control -->
     <keybind key="XF86AudioPlay">
       <action name="Execute">
@@ -190,6 +191,16 @@
         <command>sh ~/scripts/play-pause.sh</command>
       </action>
     </keybind>
+    <keybind key="W-m">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Switch sound</name>
+        </startupnotify>
+        <command>sh ~/scripts/switch-sound.sh</command>
+      </action>
+    </keybind>
+
     <keybind key="F7">
       <action name="Execute">
         <startupnotify>
@@ -217,6 +228,16 @@
         <command>sh ~/scripts/volume-down.sh</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioMute">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Lower volume</name>
+        </startupnotify>
+        <command>sh ~/scripts/mute.sh</command>
+      </action>
+    </keybind>
+   
     <!-- Keybindings for media control -->
     <keybind key="XF86MonBrightnessUp">
       <action name="Execute">
@@ -236,6 +257,7 @@
         <command>sh ~/scripts/brightness-down.sh</command>
       </action>
     </keybind>
+   
     <!-- Keybindings for desktop switching -->
     <keybind key="">
       <action name="">
@@ -319,6 +341,22 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
+    <keybind key="W-Up">
+      <action name="MoveResizeTo">
+      <!--Move the window to the next monitor-->
+        <monitor>next</monitor>
+      </action>
+    </keybind>
+    <keybind key="W-p">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Monitor mode</name>
+        </startupnotify>
+        <command>sh ~/scripts/dual-monitor.sh</command>
+      </action>
+    </keybind>
+    
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -464,7 +502,7 @@
     </keybind>
     <!-- Maximize -->
     <keybind key="Super-Return">
-      <action name="Maximize"/>
+      <action name="ToggleMaximize"/>
     </keybind>
     <!-- Minimize -->
     <keybind key="Super-backslash">

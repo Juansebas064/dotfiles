@@ -116,4 +116,4 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias set-resolution="sh $HOME/.screenlayout/default.sh" 
+alias st="startx"

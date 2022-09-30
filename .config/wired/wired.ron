@@ -55,7 +55,7 @@
     // should we use to determine the active monitor?
     // Options: Mouse, Window
     // Default: Mouse
-    focus_follows: Window,
+    focus_follows: Mouse,
 
     // Enable printing notification data to a file.
     // Useful for scripting purposes.
