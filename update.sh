@@ -8,6 +8,6 @@ cp $home/.config/rofi/powermenu/type-2/powermenu.sh ./
 
 cp -r $home/{.themes,.icons,.zshrc,.xinitrc,scripts,.local/share/applications/nvim.desktop} ./
 
-sudo cp -r /etc/X11/xorg.conf.d/ ./etc/X11
+sudo cp -r /etc/X11/xorg.conf.d/ etc/X11
 
 
