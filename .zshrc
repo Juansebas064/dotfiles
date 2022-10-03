@@ -117,3 +117,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias st="startx"
+alias nv="nvim"
+alias sn="shutdown now"
