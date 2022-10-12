@@ -2,9 +2,10 @@
 
 home=$HOME
 
-cp -r .config .icons .themes .zshrc .xinitrc scripts $home
+cp -r .config .icons .themes .zshrc .xinitrc .p10k.zsh scripts $home
 cp  nvim.desktop $home/.local/share/applications
 sudo cp -r etc/* /etc/
+co Meslo*.ttf $home/.local/share/fonts
 cp Lake2.jpg $home/Pictures
 
 cp powermenu.sh $home/.config/rofi/powermenu/type-2/

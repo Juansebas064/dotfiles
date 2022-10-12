@@ -55,5 +55,6 @@ fi
 #exec xterm -geometry 80x66+0+0 -name login
 
 xscreensaver -no-splash &
+xrandr -s 1368x768 &
 exec openbox-session
 #exec i3

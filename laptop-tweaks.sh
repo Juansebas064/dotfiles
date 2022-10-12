@@ -1,7 +1,6 @@
 sudo systemctl enable bluetooth
 echo "
 blueman-applet &
-sh ~/.screenlayout/default.sh &
 nitrogen --restore &
 " >> $HOME/.config/openbox/autostart
 sudo systemctl disable dhcpcd
