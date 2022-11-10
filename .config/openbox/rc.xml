@@ -191,16 +191,6 @@
         <command>sh ~/scripts/play-pause.sh</command>
       </action>
     </keybind>
-    <keybind key="W-m">
-      <action name="Execute">
-        <startupnotify>
-          <enabled>true</enabled>
-          <name>Switch sound</name>
-        </startupnotify>
-        <command>sh ~/scripts/switch-sound.sh</command>
-      </action>
-    </keybind>
-
     <keybind key="F7">
       <action name="Execute">
         <startupnotify>
@@ -259,30 +249,6 @@
     </keybind>
    
     <!-- Keybindings for desktop switching -->
-    <keybind key="">
-      <action name="">
-        <to>down</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="">
-      <action name="SendToDesktop">
-        <to>left</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="">
-      <action name="SendToDesktop">
-        <to>right</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
-    <keybind key="">
-      <action name="SendToDesktop">
-        <to>up</to>
-        <wrap>no</wrap>
-      </action>
-    </keybind>
     <keybind key="C-A-1">
       <action name="SendToDesktop">
         <to>1</to>
@@ -341,13 +307,7 @@
     <keybind key="W-d">
       <action name="ToggleShowDesktop"/>
     </keybind>
-    <keybind key="C-A-Right">
-      <action name="MoveResizeTo">
-      <!--Move the window to the next monitor-->
-        <monitor>next</monitor>
-      </action>
-    </keybind>
-    <keybind key="C-A-Left">
+    <keybind key="W-m">
       <action name="MoveResizeTo">
       <!--Move the window to the next monitor-->
         <monitor>next</monitor>

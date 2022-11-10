@@ -16,9 +16,6 @@ killall -SIGUSR1 tint2
 sudo timedatectl set-timezone America/Bogota
 timedatectl set-ntp true
 
-#sudo chmod 777 $home/*
-#sudo chmod 777 $home/.config/*
-
 echo "
 *****************************************************************************
 If the font or the theme is not applied, do it manually through lxappearance and Openbox configuration.

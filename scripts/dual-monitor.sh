@@ -11,3 +11,4 @@ else
     tint2 &
     nitrogen --restore
 fi
+picom --experimental-backends &
