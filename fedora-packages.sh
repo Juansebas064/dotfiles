@@ -11,7 +11,7 @@ sudo dnf copr enable linuxredneck/pamixer
 
 dnf check-update
 
-sudo dnf install xorg-x11-server-Xorg xorg-x11-xinit xrandr xev blueman wget curl openbox obconf tint2 xdg-user-dirs ntfs-3g rofi xscreensaver alacritty zsh xterm NetworkManager network-manager-applet alsa-utils pavucontrol playerctl pamixer thunar thunar-volman thunar-archive-plugin gvfs unzip unrar firefox telegram-desktop nitrogen gedit xfce4-clipman-plugin eog xfce4-screenshooter libnotify picom neofetch htop google-noto-emoji-color-fonts file-roller gparted pulseaudio-module-bluetooth cups ghostscript avahi gutenprint system-config-printer discord vlc lxappearance-obconf code ibm-plex-fonts-all neovim xdg-user-dirs google-drive-ocamlfuse volumeicon
+sudo dnf install xorg-x11-server-Xorg xorg-x11-xinit xrandr xev blueman wget curl openbox obconf tint2 xdg-user-dirs ntfs-3g rofi xscreensaver alacritty zsh xterm NetworkManager network-manager-applet alsa-utils pavucontrol playerctl pamixer thunar thunar-volman thunar-archive-plugin gvfs unzip unrar firefox telegram-desktop nitrogen gedit xfce4-clipman-plugin eog xfce4-screenshooter libnotify picom neofetch htop google-noto-emoji-color-fonts file-roller gparted pulseaudio-module-bluetooth cups ghostscript avahi gutenprint system-config-printer discord vlc lxappearance-obconf code ibm-plex-fonts-all neovim xdg-user-dirs google-drive-ocamlfuse volumeicon gcolor2
 
 xdg-user-dirs-update
 
